@@ -1,0 +1,133 @@
+.searching-main {
+  background: rgb(247, 241, 237);
+}
+
+.searching-wrapper {
+--border-color: rgb(186, 186, 186);
+--advice-hover-color: rgb(81, 81, 255);
+
+  width: 45%;
+  margin: 0 auto;
+}
+
+.searching-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  border: 1.05px solid var(--border-color);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+#searching-field {
+  border: none;
+  height: 40px;
+  width: 100%;
+  padding: 5px 8px;
+  font-size: 17px;
+}
+
+#searching-field:focus {
+  outline: none; 
+  border: none;
+}
+
+.searching-btn {
+  border: none;
+  background: white;
+  padding: 0 8px;
+  cursor: pointer;
+}
+
+.searching-content {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.searching-item {
+  display: grid;
+  grid-template-columns: 1fr 5fr auto;
+  grid-template-rows: auto;
+  margin-top: 20px;
+  padding: 12px 16px;
+  background: white;
+  box-shadow: 1px 2px rgb(231, 231, 231);
+  border-radius: 3px;
+  overflow: hidden;
+} 
+
+.searching-item__img {
+  width: 100px;
+  height: 145px;
+  overflow: hidden;
+  position: relative;
+  background: wheat;
+  
+}
+.searching-item__img img {
+  width: 100%; 
+  height: 100%; 
+  display: block; 
+}
+
+.searching-item__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: self-start;
+  padding: 0 20px;
+}
+.searching-item__authors {
+  font-size: 17px;
+}
+.searching-item__title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.searching-item__plus-img {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.searching-item__plus-img {
+  font-size: 23px;
+  color: gray;
+}
+
+.advice-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 40px;
+  padding-bottom: 15px;
+}
+.advice-wrapper span {
+  font-size: 23px;
+  margin-bottom: 7px;
+}
+.advice-conteiner span {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.advice-conteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 3px;
+  height: 40px;
+  box-shadow: 1px 2px rgb(231, 231, 231);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.advice-conteiner:hover {
+  color: var(--advice-hover-color);
+  border: 1px solid var(--advice-hover-color);
+}
+
+
+
+

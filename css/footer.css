@@ -1,0 +1,87 @@
+:root {
+  --after-hover: #9d6e00;
+  --before-hover: #5c4000;
+  --main-color: #e1d6ce;
+
+  --hover-text-transition: 0.1s;
+}
+.footer {
+  background: var(--main-color);
+  }
+  
+  .footer .footer-container {
+  font-size: 1rem;
+  display: grid;
+  padding: 5px;
+  width: 100%;
+  grid-template-columns: repeat(2,1fr);
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .footer .footer-container h2{
+    text-align: center;
+  }
+  .footer .footer-container p{
+    text-align: center;
+  }
+  
+  .footer .footer-container .social-icons {
+  margin-top: 0.3rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  }
+  
+  .footer .social-icon i {
+  font-size: 2.5rem;
+  list-style: none;
+  color: var(--before-hover);
+  text-decoration: none;
+  transition: var(--hover-text-transition) linear;
+  }
+  
+  .footer .social-icon i:hover {
+    color: var(--after-hover);
+  }
+  
+ .contact-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7px;
+  align-items: center;
+  list-style: none;
+  gap: 0.5rem;
+  }
+  
+  .footer .contact-list-item a {
+  display: flex;
+  gap: 0.6rem;
+  text-decoration: none;
+  transition: var(--hover-text-transition) linear;
+  color: var(--before-hover);
+  }
+  
+  .footer .contact-list-item a:hover {
+  color: var(--after-hover);
+  }
+
+  @media screen and (max-width: 686px) {
+    .footer .footer-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  @media screen and (max-width: 486px) {
+    .footer .footer-container {
+      font-size: 0.8rem;
+    }
+    .footer .social-icon i {
+      font-size: 2rem;
+    }
+  }

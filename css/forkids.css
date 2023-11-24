@@ -1,0 +1,124 @@
+.forkids-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(14, 255, 207, 0.15);
+  background-image: url('/img/kidscover.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed ;
+
+  --description-font-size: 12px;
+}
+
+.forkids-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 140px;
+  background: rgb(69, 69, 215);
+  font-size: 45px;
+  color: white;
+  font-family: 'Bad Script', cursive;
+  font-weight: bold;
+}
+
+.forkids-main-wrapper {
+  position: relative;
+  width: 75%;
+  height: 100%;
+}
+
+.forkids__categories{
+  display: flex;
+  justify-content:center;
+  overflow: auto;
+  margin-top: 30px;
+}
+.forkids__categories ul{
+  display: flex;
+  justify-content:space-between;
+  height: 40px;
+  gap: 15px;
+}
+.forkids__categories li{
+  display: flex;
+  align-items: center;
+  background: rgb(254, 233, 171);
+  border-radius: 10px;
+  padding: 7px 12px;
+  font-family: 'Shantell Sans', cursive;
+}
+.forkids__categories a{
+  font-size: 22px;
+  color: rgb(11, 0, 84)
+}
+
+.forkids-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 45px;
+  font-family: 'Shantell Sans', cursive;
+}
+.flex-column {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.forkids-content-section {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-size: 23px;
+  width: 100%;
+
+  --container-height: 317px;
+  --img-width: 165px;
+  --description-height: 65px;
+}
+.forkids-content-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-right: 22px;
+  width: 165px;
+  height: 327px;
+  overflow: hidden;
+  background-color: rgba(255,255,255,.7);
+  backdrop-filter: blur(5px);
+  border-radius: 5px 5px 25px 25px;
+  padding-bottom: 10px;
+  box-shadow: 1px 2px 2px rgb(231, 231, 231);
+}
+.forkids-content-img {
+  width: 165px;
+  height: calc(327px - 65px);
+  border-radius: 4px;
+  background-color: aquamarine;
+}
+.forkids-content-img img {
+  width: 100%; 
+  height: 100%; 
+  display: block; 
+}
+.forkids-content-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+}
+.forkids-content-author {
+  text-align: center;
+  font-size: var(--description-font-size);
+
+}
+.forkids-content-title {
+  text-align: center;
+  font-size: var(--description-font-size);
+  font-weight: bold;
+}
+
