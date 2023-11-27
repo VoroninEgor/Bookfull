@@ -79,6 +79,10 @@
   height: 327px;
   overflow: hidden;
 }
+.swiper-slide {
+  width: unset !important;
+  
+}
 .index-content-img {
   width: 165px;
   height: calc(317px - 75px);

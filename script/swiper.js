@@ -1,11 +1,12 @@
-const swiper = new swiper('.swiper', {
+const swiper = new Swiper('.swiper', {
   direction: 'horizontal', // Это задает горизонтальное направление свайпа
-  loop: true,
+  loop: false,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+  slidesPerView: 'auto',
+  slidesPerGroupAuto: true,
+  spaceBetween: '20',
+  centerInsufficientSlides: true,
 });
