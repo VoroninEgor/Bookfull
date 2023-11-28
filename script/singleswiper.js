@@ -1,6 +1,12 @@
-const swiper = new Swiper('.swiper', {
+const singleswiper = new Swiper('.singleswiper', {
   direction: 'horizontal', // Это задает горизонтальное направление свайпа
-  loop: false,
+  loop: true,
+  autoplay: {
+    delay: 10000,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+  },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',

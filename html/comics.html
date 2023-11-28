@@ -3,18 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <Link rel="stylesheet" href="/css/index.css"></Link>
   <Link rel="stylesheet" href="/css/header.css"></Link>
   <Link rel="stylesheet" href="/css/comics.css"></Link>
-  <Link rel="stylesheet" href="/css/swiper.css"></Link>
 
+  <script src="https://kit.fontawesome.com/65c89343a4.js" crossorigin="anonymous"></script>
+  <title>Комиксы — Букфулл</title>
+  <link rel="icon" href="/img/hellokitty.png" type="image/png">
+  <link rel="shortcut icon" href="/img/hellokitty.png" type="image/png">
 
-  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Fontdiner+Swanky&family=Fuzzy+Bubbles:wght@700&family=Inter:wght@300;400&family=Oswald:wght@500&family=Shantell+Sans&family=Source+Serif+4:opsz@8..60&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-</head>
-
 <body>
   <div class="wrapper">
     <header>
@@ -36,37 +40,67 @@
         </label>
       </nav>
     </header>
-
+    
     <main class="comics-main">
-      <div class="comics-main__wrapper">
+      <div class="comics-label">Komukcb1</div>
 
-        <div class="swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
+      <div class="comics-main-wrapper">
 
+        <div class="advice-container">
+          <div class="swiper singleswiper"> <!-- Используем класс singleswiper -->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="advice-element">
+                  <div class="img" style="background-image: url('/img/magic-fight.jpg');"></div>
+                  <div class="info">
+                    <div class="title">МАГИЧЕСКАЯ БИТВА</div>
+                    <div class="description">Юдзи Итадори – обычный старшеклассник. И хотя мальчик от рождения обладает выдающимися физическими данными, спорт его совсем не интересует. Юноша предпочитает проводить время со своими друзьями в Клубе исследователей паранормальных явлений. Однажды в руки школьников попадает высушенный палец Двуликого Сукуны, короля проклятий. И с этой секунды жизнь Итадори начинает круто меняться: Юдзи становится частью невиданного ранее мира… Мира магии и заклинаний.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="advice-element">
+                  <div class="img" style="background-image: url('/img/demonsword.jpg');"></div>
+                  <div class="info">
+                    <div class="title">ИСТРЕБИТЕЛЬ ДЕМОНОВ</div>
+                    <div class="description">Начало XX века, эпоха Тайсё. На семью Тандзиро, доброго торговца углём, нападает демон. Выжить удаётся только Нэдзуко, младшей сестре Тандзиро, но она и сама становится демоном. Чтобы вернуть сестре человеческий облик и отомстить убийце, Тандзиро отправляется в путь!
+                      Приключение, полное брызг крови и блеска клинков, начинается!</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="advice-element">
+                  <div class="img" style="background-image: url('/img/doll.jpg');"></div>
+                  <div class="info">
+                    <div class="title">ЭТА ФАРВОРОВАЯ КУКЛА ВЛЮБИЛАСЬ</div>
+                    <div class="description">Вакана с детских лет мечтал о том, что, став взрослым, освоит непростое ремесло кукольника, чтобы создавать фарфоровых кукол невиданной красоты. Парень был настроен решительно достигнуть желаемого, и только об этом и думал всё свободное время. Впрочем, мечта вполне могла осуществиться, ведь дедушка парня был кукольником и уж ценные знания были доступны Вакане, но он никак не мог научиться создавать головы кукол. При этом имелся у него повод для гордости, ведь он отлично справлялся с пошивом миниатюрной одежды. А на этой почве ему удается сблизиться с одноклассницей Марин Китагавой.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
-        
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        
-          <!-- If we need scrollbar -->
-          <div class="swiper-scrollbar"></div>
+          <script src="/script/singleswiper.js"></script>
         </div>
-        <script src="/script/swiper.js"></script>
+        
+        
 
-      </div>
+        <div class="comics-content-wrapper">
+          
+          <div class="flex-column" id="comics__first-section"></div>
+          <div class="flex-column" id="comics__second-section"></div>
+          <div class="flex-column" id="comics__third-section"></div>
+          
+          <script src="/script/comics.js"></script>
+          <script src="/script/swiper.js"></script>
+        </div>
+        
+        
+      
     </main>
-
-
-    <script src="/script/comics.js"></script>
-
   </div>
-  
 </body>
 
 </html>
