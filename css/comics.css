@@ -82,6 +82,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   height: 25%;
   font-size: 24px;
   
@@ -177,3 +178,252 @@
   font-weight: bold;
 }
 
+
+
+.grid-container {
+  width: 70%;
+  align-self:center;
+  z-index: 5;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-gap: 15px;
+  padding: 20px;
+}
+.small-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 8px;
+}
+
+.big-block {
+  position: relative;
+  color: #fff;
+  background-image: url('/img/gravitifalse.jpg');
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.big-block-title{
+  position: absolute;
+  text-align: center;
+  
+  padding: 15px 0;
+  transform:translate(0%, 0%);
+  background-color: rgba(38, 38, 38, 0.8);
+  font-size: 35px;
+}
+
+.small-block {
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  aspect-ratio: 1/1.3;
+}
+
+@media (max-width: 1234px) {
+  .advice-container{
+    margin-top: 40px;
+    width: 80%;
+  }
+  .advice-element{
+  }
+  .advice-element .img {
+    width: 40%;
+  }
+  .advice-element .info {
+    width: 60%;
+  }
+  .advice-element .title{
+    height: 20%;
+    font-size: 23px;
+  }
+  .advice-element .description{
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1160px) {
+  .grid-container {
+    width: 60%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px auto;
+    grid-gap: 5px;
+  }
+  .big-block{
+    background-image: none;
+  } 
+  .big-block-title{
+    font-size: 25px
+  }
+  .small-container{
+    grid-gap: 5px;
+  }
+
+  /*  */
+
+  .comics-content-container {
+    width: 190px;
+    height: 280px;
+  }
+  .comics-content-img {
+    width: 190px;
+    height: calc(280px - 60px);
+  }
+  .comics-content-description {
+    height: 60px;
+  }  
+}
+
+@media (max-width: 970px) {
+  .advice-container{
+    margin-top: 40px;
+    width: 85%;
+    height: 340px;
+  }
+  .advice-element{
+    height: 340px;
+  }
+  .advice-element .img {
+    width: 40%;
+  }
+  .advice-element .info {
+    width: 60%;
+  }
+  .advice-element .title{
+    height: 17%;
+    font-size: 19px;
+  }
+  .advice-element .description{
+    padding: 0 20px;
+    font-size: 12px;
+    height: 83%;
+  }
+  .big-block-title{
+    font-size: 23px
+  }
+}
+@media (max-width: 717px) {
+  .comics-content-section {
+    font-size: 22px;
+  }
+
+  .grid-container {
+    width: 70%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px auto;
+  }
+  .big-block{
+    background-image: none;
+  } 
+  .big-block-title{
+    font-size: 20px;
+    height: 100%;
+  }
+  .small-container{
+    grid-gap: 5px;
+  }
+}
+@media (max-width: 650px) {
+  .comics-content-section {
+    font-size: 21px;
+  }
+  .advice-container{
+    height: 320px;
+  }
+  .advice-element{
+    height: 320px;
+  }
+  .advice-element .title{
+    font-size: 14px;
+  }
+  .advice-element .img {
+    width: 50%;
+  }
+  .advice-element .info {
+    width: 50%;
+  }
+  .advice-element .description{
+    overflow: auto;
+  }
+  .grid-container {
+    width: 85%;
+  }
+  .big-block-title{
+    font-size: 18px
+  }
+
+  /*  */
+
+  .comics-content-container {
+    width: 180px;
+    height: 260px;
+  }
+  .comics-content-img {
+    width: 180px;
+    height: calc(260px - 55px);
+  }
+  .comics-content-description {
+    height: 55px;
+  } 
+  .comics-content-author {
+    font-size: 11px;  
+  }
+  .comics-content-title {
+    font-size: 11px;  
+  }
+}
+
+@media (max-width: 450px) {
+  .advice-container{
+    height: 310px;
+  }
+  .advice-element{
+    height: 310px;
+  }
+  .advice-element .title{
+    height: 15%;
+    font-size: 12px;
+  }
+  .advice-element .description{
+    font-size: 11px;
+  }
+  .grid-container {
+    width: 90%;
+  }
+
+  /*  */
+
+  .comics-content-container {
+    width: 170px;
+    height: 250px;
+  }
+  .comics-content-img {
+    width: 170px;
+    height: calc(250px - 50px);
+  }
+  .comics-content-description {
+    height: 50px;
+  } 
+}
+
+@media (max-width: 370px) {
+  .advice-container{
+    height: 290px;
+  }
+  .advice-element{
+    height: 290px;
+  }
+  .advice-element .title{
+    height: 12%;
+    font-size: 10px;
+  }
+  .advice-element .description{
+    font-size: 9px;
+  }
+}
