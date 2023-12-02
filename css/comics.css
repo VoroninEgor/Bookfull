@@ -328,6 +328,21 @@
   .small-container{
     grid-gap: 5px;
   }
+
+  /*  */
+  .comics-content-wrapper {
+    gap: 20px;
+  }
+  .comics-content-container {
+    margin-top: 15px;
+  }
+  .comics-content-wrapper {
+    margin-top: 20px;
+  }
+  .advice-container{
+    margin-top: 20px;
+    width: 100%;
+  }
 }
 @media (max-width: 650px) {
   .comics-content-section {
