@@ -26,7 +26,7 @@ async function searchingByName(title, count = 4) {
             `<div class="searching-item">` +
               `<div class="searching-item__img"> <img src='${imageLinks}' alt='${title} Cover'> </div>` + 
               `<div class="searching-item__description"> <span class="searching-item__authors">${authors}</span> <span class="searching-item__title">${title}</span> </div>` + 
-              `<div class="searching-item__plus-img">` +
+              `<div class="searching-item__plus-img" onclick="addBookToLocalSorage('${imageLinks}','${title}','${authors}')">` +
                 `<i class="fa-solid fa-plus"></i>` +
               `</div>` +
             `</div>`;
@@ -70,3 +70,18 @@ function handleAdviceClick(adviceElemet) {
 
 
 document.querySelector('#search').style.color = 'rgb(255, 174, 0)';
+
+function generateKey(title, author){
+  return `${title}_${author}`;
+}
+
+function addBookToLocalSorage(imageLinks, title, author) {
+  let bookshelf = JSON.parse(localStorage.getItem('bookshelf')) || {};
+
+  let key = generateKey(title, author);
+
+  bookshelf[key] = {imageLinks: imageLinks, title: title, author: author};
+
+
+  localStorage.setItem('bookshelf', JSON.stringify(bookshelf));
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <Link rel="stylesheet" href="/css/header.css"></Link>
+  <Link rel="stylesheet" href="/css/index.css"></Link>
+  <Link rel="stylesheet" href="/css/mybooks.css"></Link>
+  <Link rel="stylesheet" href="/css/footer.css"></Link>
+
+
+  <title>Ваша библиотека — Bookfull</title>
+  <script src="https://kit.fontawesome.com/65c89343a4.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header>
+      <nav>
+        
+        <input type="checkbox" id="check">
+
+        <label class="logo">Bookfull</label>
+        <ul>
+          <li><a href="/html/searching.html" id="search">Поиск</a></li>
+          <li><a href="/index.html" id="main">Главное</a></li>
+          <li><a href="/html/comics.html" id="comics">Комиксы</a></li>
+          <li><a href="/html/forkids.html" id="forkids">Детям</a></li>
+          <li><a href="/html/mybooks.html" id="mybook">Мои книги</a></li>
+        </ul>
+
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+      </nav>
+    </header>
+
+    <div class="main-container">
+      <main class="mybooks-main">
+        <div class="reading-wrapper">
+          <div class="reading-label">Вы сейчас читаете</div>
+  
+          <div class="reading-container">
+
+            <div class="swiper"> <!-- Используем класс singleswiper -->
+              <div class="swiper-wrapper" id="reading-swiper">
+                <div class="swiper-slide">
+                  <div class="advice-element">
+                    <div class="reading-book">
+                      <img src="/img/rlstine.jpg" class="reading-img">
+                      <div class="reading-description">
+                        <div class="reading-author">РЛ Стайн</div>
+                        <div class="reading-title">Добро пожаловать в мертвый дом</div>
+                        <div class="reading-footer">
+                          <div class="reading-progressbar">
+                            <div class="reading-progressbar-filling" style="width: 67%; background-color: rgb(170, 255, 1);">67%</div>
+                          </div>
+                          <div class="reading-read-btn">ЧИТАТЬ</div>
+                        </div>
+                      </div>
+                      <div class="reading-delete-btn">
+                        <i class="fa-solid fa-xmark"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="advice-element">
+                    <div class="reading-book">
+                      <img src="/img/doll.jpg" class="reading-img">
+                      <div class="reading-description">
+                        <div class="reading-author">Юдзуху Харимото</div>
+                        <div class="reading-title">Эта фарфоровая кукла влюбилась</div>
+                        <div class="reading-footer">
+                          <div class="reading-progressbar">
+                            <div class="reading-progressbar-filling" style="width: 41%; background-color: rgb(255, 251, 1);"> 41%</div>
+                          </div>
+                          <div class="reading-read-btn">ЧИТАТЬ</div>
+                        </div>
+                      </div>
+                      <div class="reading-delete-btn">
+                        <i class="fa-solid fa-xmark"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+
+            
+
+            
+          </div>
+        </div>
+  
+        <div class="statistics-wrapper">
+          <div class="statisc-container">Вы стали читать на 10 % больше в этом месяце</div>
+          <div class="statisc-container">Вы прочитали 3 книги в этом месяце</div>
+          <div class="statisc-container">Фэнтези - ваш любимый жанр в этом месяце</div>
+          <div class="statisc-container">Вы читали 15 часов в этом месяце</div>
+        </div>
+
+        <div class="bookshelf-wrapper">
+          <div class="index-content-wrapper">
+          
+            <div id="index__bookshelf-section"></div>
+            
+          </div>
+          <script src="/script/mybooks.js"></script>
+          <script src="/script/swiper.js"></script>
+         
+        </div>
+  
+      </main>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="about">
+          <h2>О разработчике</h2>
+          <p>
+            26/3 rmnk 12k2 mob member
+          </p>
+          <ul class="social-icons">
+            <li class="social-icon">
+              <a href="#"><i class="fa-brands fa-vk"></i></a>
+            </li>
+            <li class="social-icon">
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+            </li>
+            <li class="social-icon">
+              <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact">
+          <h2>Контакты</h2>
+          <ul class="contact-list">
+            <li class="contact-list-item">
+              <a href="tel:=+79161234567">
+                <i class="fa-solid fa-phone"></i>
+                <span>+7 (950) 751 15-24</span></a>
+            </li>
+            <li class="contact-list-item">
+              <a href="/index.html">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Москва, мичуринский пр-т 12к2</span></a>
+            </li>
+            <li class="contact-list-item">
+              <a href="mailto:example@mail.com"><i class="fa-solid fa-envelope"></i><span>example@mail.com</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  
+</body>
+
+</html>

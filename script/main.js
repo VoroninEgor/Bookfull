@@ -1,6 +1,6 @@
-let first_section = ["Один плюс один", "Великий Гэтсби", "KGBT+", "Братья Карамазовы", "To Kill a Mockingbird", "В унисон", "To Kill a Mockingbird", "В унисон"];
-let second_section = ["Противостояние", "Лондон в огне", "Гарри Поттер", "Герда", "Пучина", "Под крики сов", "To Kill a Mockingbird", "В унисон"];
-let third_section = ["Жаренные зеленые помидоры", "Корпорация самозванцев ", "Шантарм", "Скафандр и бабочка", "Ставок больше нет", "Лисьи чары", "To Kill a Mockingbird", "В унисон"];
+let first_section = ["Один плюс один", "Великий Гэтсби", "KGBT+", "Энцо Феррари", "To Kill a Mockingbird", "В унисон", "Аномалия", "Изобретатель кроссовок"];
+let second_section = ["Противостояние", "Лондон в огне", "Гарри Поттер", "Герда", "Пучина", "Под крики сов", "Лисья нора", "Иные"];
+let third_section = ["Жаренные зеленые помидоры", "Корпорация самозванцев ", "Шантарм", "Скафандр и бабочка", "Ставок больше нет", "Лисьи чары", "Доктор кто. День доктора", "В унисон"];
 
 async function fetchAndDisplayBooks(titleArray, section_name, section_numer) {
   let content_wrapper = document.querySelector(`#index__${section_numer}`);

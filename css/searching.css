@@ -56,6 +56,12 @@
   border-radius: 3px;
   overflow: hidden;
 } 
+.searching-item:hover{
+  box-shadow: 0px 0px 7px  rgb(181, 181, 181);
+}
+.searching-item:hover .searching-item__title {
+  color: rgb(51, 51, 252);
+}
 
 .searching-item__img {
   width: 100px;
@@ -90,10 +96,9 @@
   display: flex;
   align-items: center;
   padding: 5px;
-}
-.searching-item__plus-img {
   font-size: 23px;
   color: gray;
+  cursor: pointer;
 }
 
 .advice-wrapper {

@@ -79,6 +79,9 @@
   height: 327px;
   overflow: hidden;
 }
+.index-content-container:hover .index-content-title {
+  color: rgb(51, 51, 252);
+}
 .swiper-slide {
   width: unset !important;
   
@@ -106,9 +109,6 @@
 .index-content-title {
   font-size: var(--description-font-size);
   font-weight: bold;
-}
-.index-content-author:hover, .index-content-title:hover {
-  color: rgb(22, 22, 255);
 }
 
 @media (max-width: 861px) {
