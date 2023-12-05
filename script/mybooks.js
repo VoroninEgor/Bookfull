@@ -4,6 +4,11 @@ function displayBookshelf(){
   let content_wrapper = document.querySelector(`#index__bookshelf-section`);
   content_wrapper.innerHTML += `<div class="index-content-section">Книжная полка</div>`;
   
+  if (Object.keys(bookshelf).length === 0) {
+    content_wrapper.innerHTML += `<div class="empty-bookshelf">Ваша полка пока что пуста</div>`;
+    return;
+  }
+
   let swiperContainer = document.createElement('div');
   swiperContainer.className = 'swiper';
   let swiperWrapper = document.createElement('div');
@@ -58,7 +63,7 @@ function displayReadingBooks() {
               `<div class="reading-title">${book.title}</div>` +
               `<div class="reading-footer">` +
                 `<div class="reading-progressbar">` +
-                  `<div class="reading-progressbar-filling" style="width: 30%; background-color: green;">10%</div>` +
+                  `<div class="reading-progressbar-filling" style="width: 0%; background-color: none;"></div>` +
                 `</div>` +
                 `<div class="reading-read-btn">ЧИТАТЬ</div>` +
               `</div>` +

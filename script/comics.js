@@ -62,3 +62,4 @@ navlogo.textContent = 'Komukcb1';
 navlogo.style.fontFamily = 'Fontdiner Swanky, serif';
 
 document.querySelector('.logo').style.color = 'black';
+

@@ -22,13 +22,11 @@ async function fetchAndDisplayBooks(titleArray, section_name, section_numer) {
     try {
       const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(title)}&maxResults=1`);
       const data = await response.json();
-
       if (data.items && data.items.length > 0) {
         const book = data.items[0].volumeInfo;
         const imageLinks = book.imageLinks && book.imageLinks.thumbnail;
         const title = book.title;
         const authors = book.authors;
-
         if (content_wrapper && imageLinks && title && authors) {
           swiperWrapper.innerHTML +=
           `<div class="swiper-slide">` + 
