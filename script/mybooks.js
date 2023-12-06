@@ -1,8 +1,7 @@
 function displayBookshelf(){
   let bookshelf = JSON.parse(localStorage.getItem('bookshelf'));
 
-  let content_wrapper = document.querySelector(`#index__bookshelf-section`);
-  content_wrapper.innerHTML += `<div class="index-content-section">Книжная полка</div>`;
+  let content_wrapper = document.querySelector(`.index-content-wrapper`);
   
   if (Object.keys(bookshelf).length === 0) {
     content_wrapper.innerHTML += `<div class="empty-bookshelf">Ваша полка пока что пуста</div>`;
@@ -68,7 +67,7 @@ function displayReadingBooks() {
                 `<div class="reading-read-btn">ЧИТАТЬ</div>` +
               `</div>` +
             `</div>` +
-            `<div class="reading-delete-btn">` +
+            `<div class="reading-delete-btn" onclick="deleteFromReading('${key}')">` +
               `<i class="fa-solid fa-xmark"></i>` +
               `</div>` +
           `</div>` +
@@ -86,12 +85,12 @@ function addToReading(imageLinks, title, author, key){
 
   readingBooks[key] = {imageLinks: imageLinks, title: title, author: author};
   localStorage.setItem('readingBooks', JSON.stringify(readingBooks));
+
 }
 
 function deleteFromBookshelf(key) {
   let bookshelf = JSON.parse(localStorage.getItem('bookshelf'));
   let readingBooks = JSON.parse(localStorage.getItem('readingBooks'));
-
 
   if (bookshelf.hasOwnProperty(key)) {
 
@@ -102,9 +101,24 @@ function deleteFromBookshelf(key) {
     localStorage.setItem('bookshelf', JSON.stringify(bookshelf));
     localStorage.setItem('readingBooks', JSON.stringify(readingBooks));
   }
-  let content_wrapper = document.querySelector(`#index__bookshelf-section`);
+  let content_wrapper = document.querySelector(`.index-content-wrapper`);
   content_wrapper.innerHTML = '';
+
   displayBookshelf();
+}
+
+function deleteFromReading(key) {
+  let readingBooks = JSON.parse(localStorage.getItem('readingBooks'));
+
+
+  if (readingBooks.hasOwnProperty(key)) {
+
+    delete readingBooks[key];
+
+    localStorage.setItem('readingBooks', JSON.stringify(readingBooks));
+  }
+  let content_wrapper = document.querySelector(`.index-content-wrapper`);
+
 }
 
 displayBookshelf();
